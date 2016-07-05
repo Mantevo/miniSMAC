@@ -1,0 +1,23 @@
+$input
+  alpha=10.0d0					! degs, airfoil angle of attack
+  beta=5.0d0					! artificial compressibilityy factor
+  dcoef2=0.0000d0				! 2nd-order smoothing coefficient (.0001)
+  dcoef4=0.0000d0				! 4th-order smoothing coefficient (.0001)
+  dt=1.0d12					! time step for turbulence model
+  dtau=0.1d0					! psuedo-time step
+  geometry='NACA 4412 Airfoil'			! <= 60 characters
+  impsch=1					! implicit scheme, 1=line relax, 2=lusgs
+  iturb=1					! if ivis=1, 0 for laminar, 1 for turb.
+  ivis=1					! 0 for inviscid, 1 for viscous flow
+  kadd=0					! >= 0; adds grid points to outer boundary
+  ntmax=200					! number of time steps to take
+  reynum=1.5d6					! Reynolds number
+  title='SMAC2D -- Sandia MiniAero Code 2D'	! <= 60 characters
+  underr=0.01d0					! under-relaxation parameter, 0<underr<1
+  zz_run_default_input=.false.			! use default run case in sub. initia
+  write_plot3d_q_file=.false.			! solution file can be big! write only if desired
+  bcmain_directory='/gscratch1/dwbarne/ms2d_2d_only_partitioned_grids/src'
+  bcmain_filename='bcmain.dat_original'
+  xygrid_directory='/gscratch1/dwbarne/ms2d_2d_only_partitioned_grids/src'
+  xygrid_filename='xy.dat_original'
+  $end
