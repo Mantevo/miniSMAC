@@ -1,0 +1,2 @@
+# miniSMAC
+MiniSMAC Mini-App
