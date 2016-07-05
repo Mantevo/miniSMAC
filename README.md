@@ -1,2 +1,2 @@
-# miniSMAC
-MiniSMAC Mini-App
+# miniSMAC CFD Mini-Application
+Solves the finite-differenced 2D incompressible Navier-Stokes equations with Spalart-Allmaras one-equation turbulence model on a structured body conforming grid. The grid is partitioned into subgrids load balanced for the number of MPI ranks requested by the user. Subgrids overlap one grid point for point-to-point boundary communication. MiniSMAC2D currently features implicit line and symmetric Gauss-Seidel relaxation algorithms. As a test case, input files are included for a C-grid around a NACA 4412 airfoil at angle of attack.
